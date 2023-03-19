@@ -1,0 +1,31 @@
+/*  O * ele  atribua as caracteristica a toda a página*/
+*{
+    /* tira a margen e o padin padrão do navegador */
+    margin: 0;
+    padding: 0;
+}
+
+h1,p{
+    color:yellowgreen;
+}
+body div section p,
+body div section h1{
+    color: orangered;
+}
+
+.heading{
+    color: mediumblue;
+}
+
+.main-content{
+    font-style: italic;
+}
+.main-content h4.heading{
+    text-decoration: underline;
+}
+
+.main.heading{
+    color:tomato;
+}
+
+

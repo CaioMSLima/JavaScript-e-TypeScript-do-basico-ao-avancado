@@ -1,0 +1,37 @@
+/* depois do elemento eu quero acrecento algo */
+div ul li::after{
+    content: " &";
+    color: aliceblue;
+    background-color: lightsteelblue;
+
+}
+p{
+    font-size: 20px;
+}
+
+div p::first-letter{
+    font-size: 60px;
+    display: block;
+    /* Em que lugar um elemanto vai ficar do seu conteiner em relação aos outros elementos */
+    float: left ;
+    margin: 0px 10px 10px 0;
+}
+
+div p::first-line{
+    background-color: darkturquoise;
+}
+
+/* selection quando vc seleciona ou grifa ele muda de cor */
+div p::selection{
+    background-color: green;
+    color:azure;
+}
+
+/* Assim vai para todos os placeholders */
+::placeholder{
+    color: darkgoldenrod;
+}
+
+.form-field::placeholder{
+    color:palegreen;
+}

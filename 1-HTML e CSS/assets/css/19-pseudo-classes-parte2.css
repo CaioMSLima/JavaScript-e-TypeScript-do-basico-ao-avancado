@@ -1,0 +1,20 @@
+/* O not ele vai efetuar as alterações exeto no que esta entre() */
+div p:not(.meio){
+    color:peru
+}
+
+/* seleciona de um grupo de irmãos, aguns deles e fazer coisa com esses irmãos */
+.one li:nth-child(2){
+    background-color: darkcyan;
+}
+
+.even li:nth-child(even){
+    background-color: dodgerblue;
+}
+.even li:nth-child(odd){
+    color:yellowgreen;
+}
+/* 3n siginifian que ele vai alterar de 3 em 3 e o 1 ele só vai dde 3 em 3 depois do primeiro valor */
+section p:nth-child(3n+1){
+    background-color: mediumslateblue;
+}

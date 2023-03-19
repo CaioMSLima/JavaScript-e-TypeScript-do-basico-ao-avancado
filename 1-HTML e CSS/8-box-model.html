@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+
+    <style>
+        /* Isso * seleciona tudo */
+        *{
+
+            /* DIz que as border e o padding serão usados no calculo da altura e largura do elemento
+            Fazendo com queo padin e o boder estejam inclusos na autura do elemento
+            */
+            box-sizing: border-box;
+            /* ele zera o do navegador */
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-one{
+            background: deeppink;
+            background-image: url(https://1.bp.blogspot.com/-E1lCTaeRWQE/XPmjkPyFcEI/AAAAAAAAvaE/9zMLDGXnC3kXWFAR-0aKiotPpHDkEiL2gCLcBGAs/s1600/Rabbids_Invasion_netflix_banner.jpg);
+            /* o couver é para se ajustar a tela */
+            background-size: cover;
+            background-position:center;
+
+            color:brown;
+            /* para uma borda aparecer eu tenho essa 3 propriedades */
+            border-width: 10px  ;
+            border-style: solid;
+            border-bottom-color:aquamarine;
+            border-right-color:blue;
+            border-left-color:turquoise;
+            border-top-color:royalblue;            
+            width: 300px;
+            height: 150px;
+            /* O espaço entre o conteudo e a borda */
+            /* T D E B */
+            padding: 15px 0px;
+            /*  empurrar o conteudo para longe de outro conteudo*/
+            margin: 20px;
+        }
+        .section-two{
+            background: cyan;
+            border: 5px solid black ;
+            width: 220px;
+            height: 50px;
+            padding: 15px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="section-one">
+        Não cortaremos os pulsos, ao contrário, 
+        costuraremos com linha 
+       
+    </section>
+    <section class="section-two">2</section>
+
+</body>
+</html>

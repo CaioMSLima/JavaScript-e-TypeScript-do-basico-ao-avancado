@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+             /*  O * significa que a mudança vai para tudo o site */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #heading{
+                background: rgba(0, 0, 0, 0.5);
+            }
+          
+            #heading div{
+                /* o display flex deixa voce poder mover as coisas que estão no mesmo bloco ou div */
+                /* e o justify content diz como que eles iram ficar */
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                background: blue;
+                /* auto é de automatico, ele alinhou a div no meio do head */
+                margin: 0 auto;
+            }
+            #heading .h1{
+                /* o paddin esta relacionado ao prenchimento do retangulo e o margem a distancia do bloco com o proximo objeto ou a tela */
+                /* 15 cima e baixo e zero esquerda e direita */
+                padding: 15px 0;
+                font-size: 20px;
+                text-transform:uppercase;
+                
+            }
+            #heading a{
+              color: aliceblue;
+              /* tirou a linha debaixo do nome e todos os efeitos da palavra*/
+              text-decoration: none;
+              font-family: sans-serif;
+                
+            }
+            body{
+                background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/d54727b4-2ad9-4e71-bb48-0899f55f103a/0737b0a2-b3ac-4486-b8e6-7081f6dd1c66/BR-pt-20230220-popsignuptwoweeks-perspective_alpha_website_small.jpg" );
+                /* o couver é para se ajustar a tela */
+                background-size: cover;
+                
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <header id="heading"> 
+
+            <div>
+                <h1 class="h1">
+                    <a href="#">Netflix</a>
+                </h1>
+    
+                <h2 class="h1 right">
+                    <a href="#">Netflix</a>
+                </h2>
+
+            </div>
+
+        </header>
+
+          
+    </body>
+</html>

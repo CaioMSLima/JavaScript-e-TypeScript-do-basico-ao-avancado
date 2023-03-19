@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas-e-Menus</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        background-color: rgba(0,0,0,0.5);
+        
+    }
+
+    nav  a{
+        color: white;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10px 0px;
+        /* como o a é in line , para os outras tags ou blocos sigam seu tamanho é necessario coloacr isso */
+        display: block;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    /* o hover faz com que esse estilo só pegue quando algem escostar no elemento */
+    nav a:hover {
+        background: rgba(0,0,0,0.1);
+    }
+
+    nav{
+        display: flex;
+        /* tras todos os conteudos para o centro da tela na diagonal */
+        justify-content: center;
+        /* tras todos os conteudos para o centro da tela na vertical */
+        align-items: center;
+    }
+
+
+    nav ul{
+        /* todos os filhos da ul, ficaram alinhados em linha */
+        display: flex;
+        /* tira o circulos das listas */
+        list-style:none;
+        background: red;
+    }
+
+    ul,ol,p,dl{
+        margin-left: 30px;
+    }
+
+</style>
+<body>
+     <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+
+            <li></li>
+
+        </ul>
+    </nav>
+
+    <!-- sem ordem -->
+    <ul>
+        <li>Iten 1</li>
+        <li>Iten 2</li>
+        <li>Iten 3</li>
+    </ul>
+
+     <!--com ordem -->
+    <ol type="1" start="9">
+        <li>Itme 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- lista com descrição -->
+    <dl>
+        <!-- tremo -->
+        <dt>Coffee</dt>
+        <!-- descrição -->
+        <dd>black hot drink</dd>
+        
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+    <br>
+    <!-- nesse escmplo mostra como é o a in line, ele não empurra ou formata os outros caracters  -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores a ducimus dolore, obcaecati magnam. Sequi consequatur quos velit at libero debitis <a href style="padding: 40px 30px; background-color: brown;">hic</a> repellat aut labore quia omnis. Vero, laboriosam labore.</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* Hover quando vc passar o mouse por cima acontece alguma coisa */
+.heading:hover{
+    background-color: red;
+    color: wheat;
+}
+
+/* Essa transition toda a proprieda que mudar ela vai desaparecer depois de 1 segundo que tirar o mouse */
+/* Em links tem uma diferença de cor em relação a links já vistos */
+.heading, .p1{
+    transition:all 1s ease-in-out;
+}
+
+/* Todos os links */
+a{ 
+color: green;
+}
+
+/* cor de link não visitados */
+a:link{
+    color:darkviolet;
+}
+
+a:visited{
+    color: darkorange;
+}
+
+a:hover{
+    background:lightgreen;
+    text-decoration: none;
+    color:gold;
+}
+
+/* Indica que o elemeto ta ativo ou clicado  ou arastado*/
+a:active{
+    color: azure;
+    background-color: darkblue;
+    text-decoration: none;
+}
+
+/* Quando vc focer ou for utilizar o inout */
+input:focus{
+    box-shadow: 0 0 5px darkcyan;
+    /* tira um efeito */
+    outline: none;
+    border: 1px solid black;
+}
+
+/* Quando estiver desabilitado */
+input:disabled{
+    background-color: rebeccapurple;
+    /* Quando vc passar o mouse */
+    cursor:not-allowed ;
+}
+
+input:checked{
+    width: 50px;
+    height: 60px;
+}
+
+input:checked + p{
+    background:teal;
+    color:white;
+   font-size: 29px;
+}
+.pai ul li:first-child{
+    background-color:tomato;
+}

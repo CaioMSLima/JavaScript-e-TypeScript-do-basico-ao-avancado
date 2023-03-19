@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O meu formulário</title>
+
+    <style>
+        label{
+            /* QUando passa o mouse ele fica clicavel e vai para seu input */
+            cursor: pointer;
+            
+            
+        }
+        #block{
+            /* faz com que o label fvire um bloco e fassa com que o input va para baixo por conta da quebra de linha */
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>My form</p>
+
+        <p>
+
+            <!-- Rotulo do input -->
+            <!-- for mostra para qual id de input ele pertence -->
+            <label id="block" for="nome">Nome:</label>
+
+            <!-- o name é para vc pegar os valors no back end, ele diz qual é o nome do imput -->
+            <!--  placeholder é a mensagem que fica no input mostrnado um exmplo ou falando o que e´para ser digitado no campo -->
+           <!-- disabled disabilida o ususario de por informaçaõ  ou interagir-->
+           <!-- readonly vc pode interagir mas não digitar -->
+           <!-- required campo obrigatório -->
+    
+            <input type="text" id="nome"name="nome" placeholder="Digite seu nome" required>
+            <input type="text" id="nome1"name="nome1" placeholder="Digite seu nome" disabled>
+            <input type="text" id="nome2"name="nome2" placeholder="Digite seu nome" readonly>
+        </p>
+
+        <p>
+            <label for="dev">Sou um dev</label>
+            
+            <!-- type = "checkbox" faz vira uma caixa de verificação -->
+            <!-- value é o valor que vai para o back se selecionar a caixa -->
+            <!-- checked o imput já vem verificado, ja vem assinalado -->
+            <input type = "checkbox" id="dev"name="dev" value="sim" checked>
+        </p>
+
+        <p>
+            Genero: <br>
+
+            <!-- Um tipo de check box mas só pode escolher uma -->
+            <!-- O name precisa ser o mesmo para todos os imputs -->
+
+            <label for="feminino">Feminino</label>
+            <input type = "radio" id="feminino"name="genero" value="feminino" >
+            
+            <label for="Masculino">Masculino</label>
+            <input type = "radio" id="Masculino"name="genero" value="masculino" >
+            
+            <label for="outro_outra">Outro ou Outra</label>
+            <input type = "radio" id="outro_outra"name="genero" value="outros_outra" >
+        </p>
+
+        <p>
+            <!-- Botão -->
+        
+            <!-- envia o formulário para algun lugar -->
+            <button type="sub">Enviar</button>
+
+            <!-- Ele vouta o botaõ para o estado inicial -->
+            <button type="reset">Resetar</button>
+
+        </p>
+
+    </form>
+
+</body>
+</html>

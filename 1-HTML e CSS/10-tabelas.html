@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        body{
+            font-family:sans-serif;
+        }
+
+        table{
+            /* faz com que não tenha expassamento entre as bordas das colunas,juntado a linhas */
+            border-collapse: collapse;
+            width: 800px
+        }
+
+        table td, table th{
+            border: 1px solid #ccc ;
+            padding: 6px;
+            text-align: left;
+        }
+
+        table caption{
+            /* localidade do caption */
+            caption-side: bottom;
+
+            /* alinha o texto para a direita */
+            text-align: right;
+            font-style: italic;
+            font-size:14px ;
+            margin: 8px 0;
+        }
+        tfoot td, table th{
+            
+            background:darkgray;
+        }
+        
+
+        tfoot td{
+            font-style: italic;
+            background:darkgray;
+        }
+
+        /* Faz com que a tabela fique visivel no celular */
+        .respnsive-table{
+            max-width: 100%;
+            /* Quando o elemanto precisa de uma barra para vc poder ver */
+            overflow-x: auto;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <p>New table </p>
+
+
+    <div class="respnsive-table">
+        <table>
+    
+            <caption>É a descrição da tabela</caption>
+            <!-- cabeçalho -->
+            <thead>
+                <!-- linhas  -->
+                <tr>
+                    <!-- colunas no cabeçalho-->
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+    
+            <!-- corpo -->
+            <tbody>
+    
+                <tr>
+                    <!-- colunas no corpo-->
+                    <td>corpo 1</td>
+                    <td>corpo 2 corpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpocorpo</td>
+                    <td>corpo 3</td>
+                </tr>
+                <tr>
+                    <!-- colspan faz com que uma td ocupe mais de uma coluna, horizontal -->
+                    <td colspan="2" >Aqui</td>
+                    <td>corpo 3</td>
+                </tr>
+                <tr>
+                      <!-- rowspan faz com que uma td ocupe mais de uma linha,vertical -->
+                    <td rowspan = "2">Verical</td>
+                    <td>corpo 2</td>
+                    <td>corpo 3</td>
+                </tr>
+                <tr>
+                
+                    <td>corpo 2</td>
+                    <td>corpo 3</td>
+                </tr>
+            </tbody>
+    
+            <!-- Rodapé da tabela -->
+            <tfoot>
+                <tr>
+                    <td>Total de 3</td>
+                    <td>Total 6</td>
+                    <td>Total 9</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- recebe uma coisa parecida com o site -->
+
+</body>
+</html>
