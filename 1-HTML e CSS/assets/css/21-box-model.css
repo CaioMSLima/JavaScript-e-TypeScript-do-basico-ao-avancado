@@ -1,0 +1,32 @@
+.text{
+    /* DIz que as border e o padding serão usados no calculo da altura e largura do elemento
+    Fazendo com queo padin e o boder estejam inclusos na autura total ou max do elemento */
+    
+    box-sizing:border-box;
+    margin: 10px  20px auto;
+    padding: 30px 20px;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 50%;
+    min-width: 50%;
+    border: 5px solid  black;
+    display: block;
+    background-color: olivedrab;
+    /* Faz com que não aconteça quebra de linha e cria uma barra de  lateral*/
+    overflow-y: scroll
+}
+   
+.auto{
+      /* O auto só ativa quando ouver quebra de linha */
+    overflow: auto;
+    padding: 20px;
+}
+
+.line{
+    /* o inline não pega configuração de tamanho,fundo, width ,hight  */
+    display:inline;
+    background-color: darkblue;
+    width: 50%;
+}
