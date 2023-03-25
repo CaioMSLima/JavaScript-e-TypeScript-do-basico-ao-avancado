@@ -1,0 +1,29 @@
+
+html{
+    /* Faz com que quando vc clique no link e vai para a procima div o scroll desse ate lá */
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+b{
+    color:tomato;
+}
+div{
+    /* O vh ele meio que pega toda a parte visivel do site, fazendo com que vc consiga criar para cada parte visvel uma cor */
+    height: 100vh;
+    height: 50;
+    background:#b2c7c6;
+    overflow: hidden;
+    font-size: 16;
+    padding-top:10px ;
+}
+
+
+#two{
+    background-color:#5c86a7 ;
+}
+#three{
+    background-color: #134f5c;
+}
