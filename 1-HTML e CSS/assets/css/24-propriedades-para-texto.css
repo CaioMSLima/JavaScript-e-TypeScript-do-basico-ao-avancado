@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 20px;
+   
+
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    /* direção do texto */
+    /* direction:rtl; */
+    /* espaçamento entre as letras */
+    letter-spacing: 2px;
+    /* espaçamento entre as palavras */
+    word-spacing: 7px;
+    /* Altura da linha */
+    line-height: 25px;
+    text-align: left;
+    text-decoration:overline;
+    /* Coloca um parágrafo, espaço antes da primeira letra  */
+    text-indent: 50px;
+    text-shadow:-1px -1px 1px crimson;
+    text-transform: capitalize;
+    
+}
