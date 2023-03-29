@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    padding: 15px;
+}
+.grid::after{
+    /* Essa configuraçoes faz com que o meu grid não intefira nos outros conteudos */
+    content: "";
+    display: block;
+    clear: both;
+}
+.grid .col{
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 200px;
+    /*  usada para posicionar e formatar conteúdo, tipo o flex mas é mais antigo */
+    float: left;
+    padding: 15px;
+}
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+    float: left;
+    
+    background-color: darkorange;
+}
+p .clear{
+    /* O clear faz co que o  float: left não interfira nesse componete */
+    clear: left;
+}
