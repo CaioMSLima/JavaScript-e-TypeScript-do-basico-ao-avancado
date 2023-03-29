@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+}
+
+.father{
+
+}
+.daugth1, .daugth2, .daugth3{
+    width: 300px;
+    height: 200px;
+    background:lightseagreen;
+    margin: 10px;
+    
+}
+
+.daugth1{
+    /* É utilizado para colocar um conteudo dentro do outro, o top, left e riht são 50px em relação ao topo, direita e esquerda do naveegador */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    /* Diz que esse esta na camda 2 acima da camada um */
+    z-index: 2;
+
+}
+.daugth2{
+    position: absolute;
+    background-color:sienna;
+    
+      /* Diz que esse esta na camda -1 abaixo de tudo*/
+    z-index: -1;
+}
+.daugth3{
+    /* Memo que vc deça o scroll da tela esse componete vai ficar nessa posição*/
+    position: fixed;
+    background-color: purple;
+
+}
+
+ul{
+    
+    height: 100px;
+    width: 100px;
+    /* O overfloew faz com que apareça a barra de rolagem,e colocando essa lista nesse quadrado baseado na altura e largura */
+    overflow-y: auto;
+}
+ul li.sticky{
+    /* ele  rola até um deteminado momento e quando achar um que tenha a classe stick ele toca*/
+    position: sticky;
+    background-color:springgreen;
+    /* faz com que o da classe stick nao saia do topo */
+    top:0;
+}
