@@ -30,3 +30,15 @@ p .clear{
     /* O clear faz co que o  float: left não interfira nesse componete */
     clear: left;
 }
+/* all é para todos os dispositivos */
+/* É uma condição criada para tamnos de telas menores(celular) ou responsividads */
+@media all and (max-width: 568px){
+    .grid .col{
+        width: 100%;
+    }
+}
+@media all and (min-width: 569px) and (max-width: 760px){
+    .grid .col{
+        width: 50%;
+    }
+}
