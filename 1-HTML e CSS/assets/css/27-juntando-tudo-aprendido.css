@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    
+}  
+.menu ul{
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu ul li{
+  float: left;
+}
+.menu ul li a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 300ms ease-in-out;
+  }
+.menu ul li a:hover {
+    background-color: darkgrey;
+  }
+
+.grid{
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+.grid::after{
+    /* Essa configuraçoes faz com que o meu grid não intefira nos outros conteudos */
+    content: "";
+    display: block;
+    clear: both;
+}
+.grid .col{
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 200px;
+    /*  usada para posicionar e formatar conteúdo, tipo o flex mas é mais antigo */
+    float: left;
+    padding: 15px;
+}
+.grid .col-content{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: darkorange;
+    /* Arendonda as bordas ou criar circulos */
+    border-radius: 20px;
+    box-shadow:10px 10px 7px 2px blue;
+}
+p .clear{
+    /* O clear faz co que o  float: left não interfira nesse componete */
+    clear: left;
+}
+
+#OtherPage{
+    margin: 0 auto;
+    padding-top: 30px;
+    height: 100vh;
+    background-color: lightsalmon;
+}
+#OtherPage-content{
+    padding: 0 30px;
+    max-width: 100%;
+}
+/* all é para todos os dispositivos */
+/* É uma condição criada para tamnos de telas menores(celular) ou responsividads */
+@media all and (max-width: 568px){
+    .grid .col{
+        width: 100%;
+    }
+}
+@media all and (min-width: 569px) and (max-width: 760px){
+    .grid .col{
+        width: 50%;
+    }
+}
