@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    /* é a posiçao da caixa , horizontal*/
+    justify-content: space-between;
+ 
+    background-color: yellow;
+    flex-flow: row wrap;
+    height: 800px;
+}
+
+.flex-item{
+    /* propriedade especifica quanto o item crescerá em relação ao restante dos itens flexíveis dentro do mesmo contêiner */
+    flex-grow: 1;
+    /* ele diz que cada elemento deve ter no minimo 320px */
+    flex-shrink: 1;
+    /* Modo simplificado de como usar todas essas propriedades */
+    flex-basis: 320px;
+    /* É a propriedade relacionada a diminuição do elemento */
+    flex: 1 1 320px;
+
+    color: aliceblue;
+    background:orangered;
+    margin: 10px;
+}
+
+

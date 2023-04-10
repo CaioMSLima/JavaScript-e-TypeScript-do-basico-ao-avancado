@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    /* direção se é em coluna ou em linha */
+    flex-direction: row;
+    /* é a posiçao da caixa , horizontal*/
+    justify-content: space-between;
+    /* posição vertivcal* */
+    align-items:flex-start;
+  
+    background-color: lightblue;
+    height: 340px;
+    
+}
+.flex-item{
+   
+    background:orangered;
+    width: 320px;
+    margin: 10px;
+  
+}
+section{
+    display: flex;
+      /*  Cao não tenha espaço na linha oara todos os conteudos, ele quebra alinha e poe o elemento na outra linha*/
+    flex-wrap: wrap;
+    align-items:flex-start;
+    flex-direction: row;
+    background-color: peachpuff;
+ 
+    /* alinha o conteudo todo */
+    align-content: center;
+    height: 340px;
+    
+}
