@@ -1,0 +1,9 @@
+/* criar variaveis globais no css */
+:root{
+    --primary-color:  #0A1128;
+    --white-color: #ffffff;
+    --light-gray-color: #EEEEEE;
+    /* um rem equivale a 10px*/
+    --gap: 3rem;
+    --secundary-color: crimson
+}
