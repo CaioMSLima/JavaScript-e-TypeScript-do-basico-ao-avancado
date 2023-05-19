@@ -226,6 +226,7 @@
         padding: 0.5rem;
         cursor: pointer;
     }
+    /* quando o close menu for chekef ~(eu quero que o menu tenha ) o display block*/
     .close-menu:checked~.menu{
         display: block;
     }
