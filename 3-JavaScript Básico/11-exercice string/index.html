@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice</title>
+</head>
+<body>
+    <script>
+        name1 = prompt("Type your full name?")
+
+        //this type my text in the body on html
+        document.body.innerHTML = `Your full name is:<strong>${name1}</strong> <br> `
+
+        //you msut use += to add another text, becase =  replace the text
+        document.body.innerHTML += `Your  name have <strong>${name1.length}</strong letters <br>`
+        document.body.innerHTML += `The second letter of your name is: <strong>${name1[1]}</strong>  <br>`
+        document.body.innerHTML += `What is the first index of letter O in your name? <strong>${name1.indexOf("a")} </strong>  <br>`
+        document.body.innerHTML += `What is the last index of letter O in your name? <strong> ${name1.lastIndexOf("o")}</strong>   <br>`
+        document.body.innerHTML += `Are The last three letters of your name: <strong>${name1.slice(-3,name1.lenght)}</strong> <br>`
+        document.body.innerHTML += `Are the word of your name: <strong>${name1.split(" ")} </strong> <br>`
+        document.body.innerHTML += `Your name with capital letters: <strong>${name1.toUpperCase()} </strong>  <br>`
+        document.body.innerHTML += `Your name with lower case: <strong> ${name1.toLowerCase()}</strong>  <br>`
+
+    </script>
+    <strong></strong>
+</body>
+</html>
