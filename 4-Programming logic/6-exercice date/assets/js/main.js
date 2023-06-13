@@ -12,7 +12,7 @@ h1.innerHTML = data.toLocaleString("pt-BR", {dateStyle: "full",timeStyle: "short
 // function criateDate(currentDate) {
 //     const weekDay = getDaysOfWeek(currentDate.getDay())
 //     const day = leftZero(currentDate.getDate())
-//     const month = getMonth(currentDate.getMonth())
+//     const month = getMonth(currentDate.getMonth() + 1)
 //     const year = leftZero(currentDate.getFullYear())
 //     const hour = leftZero(currentDate.getHours())
 //     const min = leftZero(currentDate.getMinutes())
