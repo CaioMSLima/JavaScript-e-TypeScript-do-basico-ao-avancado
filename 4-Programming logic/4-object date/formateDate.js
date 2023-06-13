@@ -1,3 +1,7 @@
+
+const date = new Date()
+const dateBrazil = formateDate(date)
+
 function leftZero(num){
     return num > 9 ? num : `0${num}`
 }
@@ -11,9 +15,6 @@ function formateDate(date){
 
    return `${day}/${month}/${year} ${hours}:${min}`
 }
-
-const date = new Date()
-const dateBrazil = formateDate(date)
 
 //10/06/2023 19:41
 console.log(dateBrazil)
