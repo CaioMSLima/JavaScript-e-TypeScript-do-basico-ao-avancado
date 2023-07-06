@@ -30,7 +30,7 @@ people(obj)
 //take the rest of variable exp:10,45,30,90
 function people(operator, accumulator,... numbers) {
    
-    //* 0 [ 10, 45, 30, 90 ]
+    //* 1 [ 10, 45, 30, 90 ]
     console.log(operator, accumulator, numbers)
 
     for(number of numbers){
