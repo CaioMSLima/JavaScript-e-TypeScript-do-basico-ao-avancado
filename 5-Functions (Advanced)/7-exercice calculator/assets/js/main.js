@@ -6,9 +6,16 @@ function createCalculator(){
         start(){
             //this -> calculator
            this.clickButton();
+           this.pressEnter();
         },
 
-        
+        pressEnter(){
+            this.display.addEventListener("keyup",event =>{
+                if(event.keyCode === 13){
+                    this.performAccount();
+                }
+            })
+        },
         performAccount(){
             let count = this.display.value;
 
@@ -59,6 +66,9 @@ function createCalculator(){
                 if(event.classList.contains("btn-eq")){
                     this.performAccount()
                 }
+                
+                // because  without  focus() when you press enter duplicate the value
+                this.display.focus();
 
                 //bind in this function transfome the this -> document to this -> calculator
                 //arrow function not change the value of this,not need  to use bind
