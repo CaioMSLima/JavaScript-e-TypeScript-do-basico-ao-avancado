@@ -23,7 +23,7 @@ console.log(oneString.search(/x/))
 console.log(oneString.replace(/t/g,">"))
 
 //24
-console.log(oneString.)
+console.log(oneString.length)
 
 //this slice is part of this text, the first variable is teh vbegin of slice,the second the end,you must use it in the second variable with the index more than the string
 //"text
