@@ -45,13 +45,13 @@ console.log(new3);
 
 const fullName = "Virgil, Ovid, Hawkins"
 
-//transforme array to string
+//transforme sting to array 
 const people = fullName.split(",")
 
 //[ 'Virgil', ' Ovid', ' Hawkins' ]
 console.log(people);
 
-//sting to array
+//array to string
 const people2 = people.join(",")
 
 //Virgil, Ovid, Hawkins
