@@ -3,7 +3,7 @@ let names0 = new Array("Bane","Norman","Loki")
 const names = ["Bane","Norman","Loki"];
 names[2] = "Lex"
 
-//[ 'Bane', 'Norman', <1 empty item> ]
+//[ 'Bane', 'Norman', 'Lex' ]
 console.log(names);
 
 //3
