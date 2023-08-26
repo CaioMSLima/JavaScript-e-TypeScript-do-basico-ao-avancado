@@ -13,7 +13,7 @@ Product.prototype.decrease = function(amount){
 
 function Tshirt(name,price,color){
     //dont have prototype of Product
-    // inherit the methods or vzriables of Product
+    // inherit the methods or variables of Product
     Product.call(this,name,price);
     this.color = color;
 }
