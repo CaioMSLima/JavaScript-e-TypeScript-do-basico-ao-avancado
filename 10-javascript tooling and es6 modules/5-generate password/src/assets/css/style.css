@@ -75,3 +75,18 @@ form label{
     font-size: 12px;
     color: red;
 }
+
+.generated-password{
+    font-size: 2em;
+    color: var(--primary-color);
+    margin: 40px 0;
+}
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+button{
+    display: block;
+    margin: 30px 0px;
+    font-size: 1em;
+}

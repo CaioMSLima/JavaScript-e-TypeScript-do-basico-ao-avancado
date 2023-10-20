@@ -75,3 +75,7 @@ form label{
     font-size: 12px;
     color: red;
 }
+
+table{
+    width: 100%;
+}

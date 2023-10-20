@@ -1,0 +1,26 @@
+{
+  "name": "CURSOJS",
+  "version": "1.0.0",
+  "description": "Aprendendo mais sobre JavaScript e TypeScript com um curso da udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel":"babel ./main.js -o ./bundle.js --presets=@babel/env -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioMSLima/JavaScript-e-TypeScript-do-basico-ao-avancado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioMSLima/JavaScript-e-TypeScript-do-basico-ao-avancado/issues"
+  },
+  "homepage": "https://github.com/CaioMSLima/JavaScript-e-TypeScript-do-basico-ao-avancado#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20"
+  }
+}

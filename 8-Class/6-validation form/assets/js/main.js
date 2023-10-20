@@ -1,0 +1,1 @@
+confirm("Hellow my friend")
