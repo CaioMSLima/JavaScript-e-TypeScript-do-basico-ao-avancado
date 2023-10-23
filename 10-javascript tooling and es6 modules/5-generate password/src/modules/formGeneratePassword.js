@@ -12,7 +12,7 @@ const button = document.querySelector('.generate-pasword')
 export default ()=>{
     console.log('I am Batman');
     button.addEventListener('click',(e) =>{
-        inputdPassword.innerHTML = generate();
+        inputdPassword.innerText = generate();
     })
 }
 
