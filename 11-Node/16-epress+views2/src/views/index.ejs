@@ -1,0 +1,35 @@
+
+<%- include('includes/head') %>
+
+
+    <section class="container">
+   
+       <!-- the  <%= %>is more security then<%- %>w  -->
+        <h1>
+          
+            <% if (typeof tile !== 'undefined') { %>
+                <%= tile  %>
+                <% } else {%>
+                     Tile not send
+                <% } %>
+
+        </h1>
+        <form action="/" method="post">
+            <label for="customer">Customer</label>
+            <input type="text" name="customer" id="customer">
+            <button>Submit</button>
+        </form>
+
+        <h2>
+            <% numbers.forEach(num => { %>
+                <%= num %> <br>
+            <% }) %>
+            
+            <%= oneVariableLocal %>
+
+        </h2>
+    </section>
+
+<%- include('includes/footer') %>
+
+ 
