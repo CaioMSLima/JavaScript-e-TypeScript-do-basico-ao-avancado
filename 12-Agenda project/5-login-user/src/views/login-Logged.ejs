@@ -1,0 +1,21 @@
+<%- include('includes/head') %>
+    <%- include('includes/nav') %>
+
+        <div class="container"></div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <!-- all this classs is in boodstrap -->
+            <div class="col-lg-8 my-3">
+                <h1 class=" text-center">Hello <%=user.email  %></h1>
+                <p class="text-center lead">You need click in logout to create another account</p>
+
+                <%- include('includes/messages')  %>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg"></div>
+        </div>
+
+        <%- include('includes/footer') %>
