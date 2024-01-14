@@ -12,12 +12,6 @@ const ContactSchema = new mongoose.Schema({
 
 const ContactModel = mongoose.model('Contact', ContactSchema);
 
-function Contact(body) {
-    this.body = body;
-    this.errors = [];
-    this.Contact = null;
-}
-
 Contact.searchById = async function(id){
     if(typeof id !== 'string') return
     const contact = await ContactModel.findById(id);
@@ -54,5 +48,14 @@ Contact.prototype.cleanUp = function () {
         cellPhone: this.body.cellphone,
         lastName: this.body.lastname
     }
+}
+
+Contact.prototype.edit = async function(id){
+    if( typeof id !== 'string') return;
+    this.valid();
+
+    if(this.errors.length > 0) return;
+    // {new: true} = if it update return this data 
+   this.contact = await ContactModel.findByIdAndUpdate(id, this.body, {new: true});
 }
 module.exports = Contact;
