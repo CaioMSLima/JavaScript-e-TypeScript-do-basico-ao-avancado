@@ -15,7 +15,13 @@ const ContactModel = mongoose.model('Contact', ContactSchema);
 function Contact(body) {
     this.body = body;
     this.errors = [];
-    this.contact = null;
+    this.Contact = null;
+}
+
+Contact.searchById = async function(id){
+    if(typeof id !== 'string') return
+    const contact = await ContactModel.findById(id);
+    return contact
 }
 
 Contact.prototype.register = async function () {
@@ -49,33 +55,4 @@ Contact.prototype.cleanUp = function () {
         lastName: this.body.lastname
     }
 }
-
-Contact.prototype.edit = async function(id){
-    if( typeof id !== 'string') return;
-    this.valid();
-
-    if(this.errors.length > 0) return;
-    // {new: true} = if it update return this data 
-   this.contact = await ContactModel.findByIdAndUpdate(id, this.body, {new: true});
-}
-
-//static methods
-Contact.searchById = async function(id){
-    if(typeof id !== 'string') return
-    const contact = await ContactModel.findById(id);
-    return contact
-}
-
-Contact.searchContacts = async function(){
-    //sort by creatAt in descending form
-    const contacts = await ContactModel.find().sort({creatAt: -1});
-    return contacts
-}
-
-Contact.delete = async function(id){
-    if(typeof id !== 'string') return
-    const contact = await ContactModel.findOneAndDelete({_id: id});
-    return contact
-}
-
 module.exports = Contact;
